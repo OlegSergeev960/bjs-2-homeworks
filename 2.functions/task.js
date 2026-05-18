@@ -11,6 +11,7 @@ function getArrayParams(...arr) {
       max = num;
     }
     sum += num;
+  
   } 
   const avg = Number((sum / arr.length).toFixed(2));
   return { min: min, max: max, avg: avg };
@@ -50,6 +51,7 @@ function differenceEvenOddWorker(...arr) {
     }
   return sumEven - sumOdd;
 }
+}
 
 function averageEvenElementsWorker(...arr) {
   if (arr.length === 0) {
@@ -66,6 +68,7 @@ function averageEvenElementsWorker(...arr) {
     return 0;
   } 
   return sumEven / countEven;
+}
 }
 
 function makeWork (arrOfArr, func) {
